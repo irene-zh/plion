@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>{% if page.title %} {{ page.title }} | {% endif %} Penn Lions</title>
+  <link rel="icon" type="image/png" href="{{ " ../img/official-logo.png " | prepend: site.baseurl }}">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!--Import Bootstrap CSS-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <!--Import icons-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.css">
+  <!--Custom CSS-->
+  <link rel="stylesheet" href="../css/style.css">
+
+
+  <!--Import Font-->
+  <link href="https://fonts.googleapis.com/css?family=Raleway:200,400,600,800" rel="stylesheet">
+
+  <!--Import JavaScript-->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+  <!--Custom JS-->
+  <script src="../js/script.js"></script>
+</head>
+
+<header>
+  <!--Naviation Bar-->
+  <nav class="navbar fixed-top navbar-dark navbar-expand-lg">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#"><img src=../img/official-logo.png width="80" alt=""></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+      </div>
+      <div class="navbar-right">
+        <div class="collapse navbar-collapse" id="navbar">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="about.html" style="color:white;">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="members.html" style="color:white;">Members</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html" style="color:white;">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<body style="background-color:black;">
+  <div class="wrapper">
+
+    <!--Page Content-->
+    {{content}}
+
+    <!--push footer to bottom-->
+    <div class="push"></div>
+  </div>
+
+  <footer class="footer">
+    <div style="font-size:2rem; display:inline-block; letter-spacing: 1.5rem;">
+      <a href="https://www.facebook.com/pennlions/?ref=br_rs"><span class="icon-social-facebook"></span></a>
+      <a href="https://www.youtube.com/user/PennLions1"><span class="icon-social-youtube"></span></a>
+      <a href="board@pennlions.net"><span class="icon-envelope"></span></a>
+    </div>
+    <p>© Penn Lions 2018</p>
+  </footer>
+</body>
+
+</div>
+
+</html>

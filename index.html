@@ -1,0 +1,28 @@
+---
+layout: default
+---
+<!--Intro Image-->
+<div class="pl-image">
+  <h1 class="main-heading">Penn Lions</h1><br>
+  <h2 class="sub-heading" style="text-shadow: rebeccapurple;">The University of Pennsylvania's Premier Chinese Lion Dance Troupe</h2>
+  <div style="padding: 5rem 0rem;">
+    <h3 class="sub-heading">Want to book a performance?</h3>
+    <p><button type="button" class="btn btn-outline-light btn-lg">CONTACT US</button></p>
+  </div>
+</div>
+
+<!--Upcoming performances-->
+<div class="pl-section">
+  <h3 class="sub-heading">Upcoming Performances</h3>
+  <div class="justify-content-center" id="upcoming-performances">
+    <ul class="myposts">
+      {% for post in site.posts limit:3 %}
+      <li class="pl-post">
+        {{ post.title}}<br>
+        <span class="postDate">{{ post.date | date: "%b %-d, %Y" }}</span>
+      </li>
+      <br>
+      {% endfor %}
+    </ul>
+  </div>
+</div>
