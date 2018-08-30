@@ -21,6 +21,7 @@ baseurl: "/plion" # the subpath of your site, e.g. /blog
 url: "https://irene-zh.github.io/plion/" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: unknown
 github_username:  irene-zh
+future: false
 root:
 # Build settings
 markdown: kramdown

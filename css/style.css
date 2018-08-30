@@ -100,22 +100,27 @@ a:hover {
 
 .myposts{
   display: block;
-  list-style-type: none;
-  style="width: 10rem;
+  list-style: none;
 }
 
 .pl-post{
   font-family: 'Raleway', sans-serif;
   border: 2px solid;
-  border-color:red;
+  border-color: white;
   border-radius: 1rem;
   text-align: center;
-  width: 20%;
-  padding: 1rem 0rem;
-  color:white;
+  padding: 3px 3px;
+  list-style-position: outside;
+  color: white;
 }
 
 .pl-post:hover{
   border-color: #555;
   color:#555;
+}
+
+#center-block {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
