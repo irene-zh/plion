@@ -3,7 +3,7 @@
 
 <head>
   <title>{% if page.title %} {{ page.title }} | {% endif %} Penn Lions</title>
-  <link rel="icon" type="image/png" href="{{ " ../img/official-logo.png " | prepend: site.baseurl }}">
+  <link rel="icon" type="image/png" href="{{ site.baseurl }}/img/official-logo.png">
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -12,7 +12,7 @@
   <!--Import icons-->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.css">
   <!--Custom CSS-->
-  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="{{ site.baseurl }}/css/style.css">
 
 
   <!--Import Font-->
@@ -24,7 +24,7 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
   <!--Custom JS-->
-  <script src="../js/script.js"></script>
+  <script src="{{ site.baseurl }}/js/script.js"></script>
 </head>
 
 <header>
@@ -32,7 +32,7 @@
   <nav class="navbar fixed-top navbar-dark navbar-expand-lg">
     <div class="container-fluid">
       <div class="navbar-header">
-        <a class="navbar-brand" href="#"><img src=../img/official-logo.png width="80" alt=""></a>
+        <a class="navbar-brand" href="#"><img src="{{ site.baseurl }}/img/official-logo.png" width="80" alt=""></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
                       <span class="navbar-toggler-icon"></span>
                     </button>

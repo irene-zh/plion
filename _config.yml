@@ -17,11 +17,11 @@ title: Penn Lions
 email: board@pennlions.net
 description: >- # this means to ignore newlines until "baseurl:"
   Penn Lions is the University of Pennsylvania's Premier Lion Dance Troupe.
-baseurl: "" # the subpath of your site, e.g. /blog
+baseurl: "/plion" # the subpath of your site, e.g. /blog
 url: "https://irene-zh.github.io/plion/" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: unknown
 github_username:  irene-zh
-
+root:
 # Build settings
 markdown: kramdown
 theme: minima
