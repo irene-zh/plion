@@ -14,22 +14,24 @@ layout: default
 <!--Upcoming performances-->
 
 <div class="pl-section">
-  <h3 class="sub-heading">Upcoming Performances</h3>
+  <h2 class="sub-heading" style="letter-spacing: 5px;font-size: 3rem;">Upcoming Performances</h2>
   <div class="container">
     <div class="row">
-      <div class ="col-sm"></div>
-      <ul class="myposts">
+      <div class ="col"></div>
+      <div class="myposts col-6">
       {% for post in site.posts limit:3 %}
-        <li class="pl-post">
-          {{ post.title}}
+        <div class="pl-post">
+          <strong style="text-shadow: 0 0 3px red;">{{ post.title }}</strong>
           <br>
           <span class="postDate">{{ post.date | date: "%b %-d, %Y" }}</span>
-        </li>
+          <br>
+          {{ post.location }}
+        </div>
         <br>
       {% endfor %}
-      </ul>
+    </div>
    <!--END POSTS-->
-   <div class ="col-sm">
+   <div class ="col">
    </div>
  </div>
   </div>

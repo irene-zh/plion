@@ -1,10 +1,13 @@
+html *
+{
+   font-family: 'Open Sans', sans-serif !important;
+}
+
 html,
 body {
     height: 100%;
     margin: 0;
 }
-
-
 
 footer {
     background-color: black;
@@ -63,7 +66,6 @@ a:hover {
 
 .navbar {
     text-transform: uppercase;
-    font-family: 'Raleway', sans-serif;
     background-color: transparent;
     -webkit-transition: background .5s ease-in-out, padding .5s ease-in-out;
     -moz-transition: background .5s ease-in-out, padding .5s ease-in-out;
@@ -72,7 +74,6 @@ a:hover {
 
 .top-nav-collapse {
     text-transform: uppercase;
-    font-family: 'Raleway', sans-serif;
     background-color: rgba(0, 0, 0, 0.8);
     -webkit-transition: background .5s ease-in-out, padding .5s ease-in-out;
     -moz-transition: background .5s ease-in-out, padding .5s ease-in-out;
@@ -80,7 +81,6 @@ a:hover {
 }
 
 .main-heading {
-    font-family: 'Raleway', sans-serif;
     text-transform: uppercase;
     letter-spacing: 20px;
     font-weight: 400;
@@ -91,7 +91,6 @@ a:hover {
 }
 
 .sub-heading {
-    font-family: 'Raleway', sans-serif;
     font-size: 1.5rem;
     text-transform: uppercase;
     color: #aaa;
@@ -104,14 +103,14 @@ a:hover {
 }
 
 .pl-post{
-  font-family: 'Raleway', sans-serif;
-  border: 2px solid;
-  border-color: white;
+  font-size: 28px;
+  border-color: #aaa;
+  color: #aaa;
+  border: 1px solid;
   border-radius: 1rem;
   text-align: center;
   padding: 3px 3px;
   list-style-position: outside;
-  color: white;
 }
 
 .pl-post:hover{
