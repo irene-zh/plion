@@ -58,19 +58,19 @@ a:hover {
 }
 
 .pl-main-image {
-    background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 1)), url('{{site.baseurl}}/img/bg.jpg') no-repeat center center;
+    background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 1)), url('../img/bg.jpg') no-repeat center center;
     background-size: cover;
     height: auto;
 }
 
 .pl-about-image {
-    background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 1)), url('{{site.baseurl}}/img/bg-2.jpg') no-repeat center center;
+    background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 1)), url('../img/bg-2.jpg') no-repeat center center;
     background-size: cover;
     height: auto;
 }
 
 .pl-contact-image {
-    background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 1)), url('{{site.baseurl}}/img/bg-3.jpg') no-repeat center center;
+    background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 1)), url('../img/bg-3.jpg') no-repeat center center;
     background-size: cover;
     height: auto;
 }
