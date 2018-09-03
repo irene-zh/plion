@@ -44,6 +44,7 @@ a:hover {
     text-decoration: none !important;
 }
 
+/* Footer */
 .wrapper {
     min-height: 100%;
     margin-bottom: -50px;
@@ -54,6 +55,7 @@ a:hover {
     height: 50px;
 }
 
+/* Main page sections and image settings*/
 .pl-section {
     color: white;
     padding-top: 5rem;
@@ -77,6 +79,7 @@ a:hover {
     height: auto;
 }
 
+/* Navbar Customization and collapse */
 .navbar {
     text-transform: uppercase;
     background-color: transparent;
@@ -93,6 +96,7 @@ a:hover {
     transition: background .5s ease-in-out, padding .5s ease-in-out;
 }
 
+/* Custom Section Text */
 .main-heading {
     text-transform: uppercase;
     letter-spacing: 20px;
@@ -110,6 +114,7 @@ a:hover {
     text-align: center;
 }
 
+/* Performance Event post styles */
 .myposts{
   display: block;
   list-style: none;
@@ -135,4 +140,68 @@ a:hover {
   display: block;
   margin-left: auto;
   margin-right: auto;
+}
+
+/* Profile picture image hover */
+.pl-container {
+  position: relative;
+  width: 50%;
+}
+
+.pl-image {
+  height: 200px;
+  width: 200px;
+}
+
+.pl-overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 200px;
+  width: 200px;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.pl-container:hover .pl-overlay {
+  opacity: 1;
+}
+
+.pl-text {
+  color: white;
+  font-size: 15px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+//
+.pl-row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: black;
+}
+
+.flex-container > div {
+  background-color: #f1f1f1;
+  width: 200px;
+  height: 200px;
+  margin: 10px;
+  text-align: center;
 }

@@ -38,9 +38,10 @@ layout: default
     <div class="row">
       <div class ="col"></div>
       <div class="myposts col-6">
+
       {% for post in site.posts limit:3 %}
         <div class="pl-post">
-          <strong style="text-shadow: 0 0 3px red;">{{ post.title }}</strong>
+          <strong style="color: #cc99ff;">{{ post.title }}</strong>
           <br>
           <span class="postDate">{{ post.date | date: "%b %-d, %Y" }}</span>
           <br>
@@ -48,6 +49,7 @@ layout: default
         </div>
         <br>
       {% endfor %}
+      
     </div>
    <!--END POSTS-->
    <div class ="col"></div>

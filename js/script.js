@@ -1,3 +1,4 @@
+// NAVBAR collapse function
 $('.navbar-collapse a').click(function() {
     $(".navbar-collapse").collapse('hide');
 });
@@ -8,3 +9,8 @@ $(window).scroll(function() {
         $(".navbar").removeClass("top-nav-collapse");
     }
 });
+
+// member detailed information hoverbox
+function showdetails(input){
+  console.log(input);
+}
