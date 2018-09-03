@@ -2,15 +2,18 @@
 layout: default
 permalink: /members
 ---
-
+<div class="pl-main-image">
+  <h2 class="sub-heading" style="letter-spacing: 5px;font-size: 3rem; padding-top: 200px;">Current Troupe Members</h2>
+</div>
 <div class="container">
   <div class="row">
     <div class="col"></div>
     <div class="col-10">
 
       <!--CURRENT TROUPE-->
-        <h2 class="sub-heading" style="letter-spacing: 5px;font-size: 3rem; padding-top: 200px;">Current Troupe Members</h2>
+
         <div class="flex-container">
+
         {% for member in site.data.members %}
         <div class="pl-container" onclick="showdetails('{{member.name}}')">
           <img src="{{site.baseurl}}/img/profiles/{{member.image}}" class="pl-image">
@@ -29,6 +32,7 @@ permalink: /members
         </div> <!--end container-->
         {% endfor %}
       </div>
+
 
       <!--PAST TROUPES-->
       <br><br><br><br>
