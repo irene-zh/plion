@@ -7,11 +7,13 @@ permalink: /members
   <div class="row">
     <div class="col"></div>
     <div class="col-10">
+
+      <!--CURRENT TROUPE-->
         <h2 class="sub-heading" style="letter-spacing: 5px;font-size: 3rem; padding-top: 200px;">Current Troupe Members</h2>
         <div class="flex-container">
         {% for member in site.data.members %}
         <div class="pl-container" onclick="showdetails('{{member.name}}')">
-          <img src="{{site.baseurl}}/img/profiles/{{member.picture}}" class="pl-image">
+          <img src="{{site.baseurl}}/img/profiles/{{member.image}}" class="pl-image">
           <span class="pl-overlay">
             <span class="pl-text">
               <strong style="font-size: 20px;">{{member.name}}</strong><br>
@@ -27,13 +29,17 @@ permalink: /members
         </div> <!--end container-->
         {% endfor %}
       </div>
+
+      <!--PAST TROUPES-->
+      <br><br><br><br>
       <h2 class="sub-heading" style="letter-spacing: 5px;font-size: 3rem;">Past Troupes</h2>
-      <img>
-      <p style="text-align: left;">
-      </p>
-    </div>
+      {% for troupe in site.data.troupes %}
+        <h2 style="color:white; text-align:center;">Penn Lions Troupe {{troupe.troupe}}</h2>
+        <img src="{{site.baseurl}}/img/troupe/{{troupe.image}}" style="width: 100%;">
+        <p style="text-align: left !important;">{{troupe.description}}</p>
+      {% endfor %}
+    </div> <!--END MIDDLE COLUMN-->
     <div class="col"></div>
 
   </div>
-</div>
-</div>
+</div> <!--END ROW-->

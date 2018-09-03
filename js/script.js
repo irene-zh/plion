@@ -11,6 +11,3 @@ $(window).scroll(function() {
 });
 
 // member detailed information hoverbox
-function showdetails(input){
-  console.log(input);
-}
