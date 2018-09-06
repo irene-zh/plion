@@ -12,12 +12,12 @@ permalink: /members
 
       <!--CURRENT TROUPE-->
 
-        <div class="flex-container">
+      <div class="flex-container">
 
         {% for member in site.data.members %}
         <div class="pl-container" onclick="showdetails('{{member.name}}')">
           <img src="{{site.baseurl}}/img/profiles/{{member.image}}" class="pl-image">
-          <span class="pl-overlay">
+          <span class="pl-overlay" data-toggle="modal" data-target="#{{member.name}}">
             <span class="pl-text">
               <strong style="font-size: 20px;">{{member.name}}</strong><br>
               {% if {{member.board}} == "TRUE" %}
@@ -27,23 +27,47 @@ permalink: /members
               Class of {{member.class}}<br>
               <span style="font-size:12px; color: #ddd;">{{member.school}}<br>
               {{member.major}}</span>
-            <span> <!-- end textbox-->
-          </span><!--end overlay-->
-        </div> <!--end container-->
+          <span> <!-- end textbox-->
+          </span>
+          <!--end overlay-->
+        </div>
+        <!--end container-->
+
         {% endfor %}
       </div>
 
+      {% for member in site.data.members %}
+      <div class="modal fade"  id="{{member.name}}" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content" style="background-color:#111;">
+            <div class="modal-header" style="border-color:black!important;">
+              <h5 class="modal-title" style="color: white; font-weight:600;margin: 0 auto;" id="{{member.name}}-title">{{member.name}}</h5>
+            </div>
+            <div class="modal-body">
+              <div class="container-fluid">
+                <div class="row">
+                  <div class="col"></div>
+                    <div class="col-10">{{member.description}}</div>
+                  <div class="col"></div>
+                </div>
+              </div>
+            </div>
+            </div>
+          </div>
+        </div>
+      {% endfor %}
 
       <!--PAST TROUPES-->
       <br><br><br><br>
-      <h2 class="sub-heading" style="letter-spacing: 5px;font-size: 3rem;">Past Troupes</h2>
-      {% for troupe in site.data.troupes %}
-        <h2 style="color:white; text-align:center;">Penn Lions Troupe {{troupe.troupe}}</h2>
-        <img src="{{site.baseurl}}/img/troupe/{{troupe.image}}" style="width: 100%;">
-        <p style="text-align: left !important;">{{troupe.description}}</p>
+      <h2 class="sub-heading" style="letter-spacing: 5px;font-size: 3rem;">Past Troupes</h2> {% for troupe in site.data.troupes %}
+      <h2 style="color:white; text-align:center;">Penn Lions Troupe {{troupe.troupe}}</h2>
+      <img src="{{site.baseurl}}/img/troupe/{{troupe.image}}" style="width: 100%;">
+      <p style="text-align: left !important;">{{troupe.description}}</p>
       {% endfor %}
-    </div> <!--END MIDDLE COLUMN-->
+    </div>
+    <!--END MIDDLE COLUMN-->
     <div class="col"></div>
 
   </div>
-</div> <!--END ROW-->
+</div>
+<!--END ROW-->

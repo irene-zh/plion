@@ -1,18 +1,18 @@
 ﻿penn lions,name,image,class,school,major,board,position,description
-1,Benjamin Fineran,fine_b.jpg,2019,School of Engineering and Applied Science,Network and Social Systems Engineering,FALSE,-,
-1,Jerry Choi,choi_j.jpg,2019,The Dental School,Dentistry,FALSE,-,
-1,Sara Zhou,zhou_s.jpg,2019,College of Arts and Sciences,Cognitive Science,TRUE,President,
-1,Siddharth (Sid) Challani,chal_s.jpg,2019,Vagelos Integrated Program in Energy Research,"Math, Electrical Engineering",TRUE,Director,
-1,Alaina Silverman,silv_a.jpg,2019,College of Arts and Sciences,"Computer Science, Cognitive Science",FALSE,-,
-1,Anthony Wing Chu,chu_w.jpg,2020,School of Engineering and Applied Science,Digital Media and Design,FALSE,-,
-1,Dan Truong,truo_d.jpg,2020,School of Engineering and Applied Science,Computer and Information Sciences,FALSE,-,
-1,Derek Nong,nong_d.jpg,2020,Vagelos Integrated Program in Energy Research,"Physics, Electrical Engineering",TRUE,Assistant Director,
-1,Jia Wei Teo,teo_j.jpg,2020,The Wharton School,Finance,FALSE,-,
+1,Benjamin Fineran,fine_b.jpg,2019,School of Engineering and Applied Science,Network and Social Systems Engineering,FALSE,-,aa
+1,Jerry Choi,choi_j.jpg,2019,The Dental School,Dentistry,FALSE,-,bb
+1,Sara Zhou,zhou_s.jpg,2019,College of Arts and Sciences,Cognitive Science,TRUE,President,cc
+1,Siddharth (Sid) Challani,chal_s.jpg,2019,Vagelos Integrated Program in Energy Research,"Math, Electrical Engineering",TRUE,Director,dd
+1,Alaina Silverman,silv_a.jpg,2019,College of Arts and Sciences,"Computer Science, Cognitive Science",FALSE,-,ee
+1,Anthony Wing Chu,chu_w.jpg,2020,School of Engineering and Applied Science,Digital Media and Design,FALSE,-,ff
+1,Dan Truong,truo_d.jpg,2020,School of Engineering and Applied Science,Computer and Information Sciences,FALSE,-,gg
+1,Derek Nong,nong_d.jpg,2020,Vagelos Integrated Program in Energy Research,"Physics, Electrical Engineering",TRUE,Assistant Director,hh
+1,Jia Wei Teo,teo_j.jpg,2020,The Wharton School,Finance,FALSE,-,ii
 1,Lynn Capulong,capu_l.jpg,2019,School of Nursing,Nursing,FALSE,-,
-1,Kai Lu,lu_k.jpg,2020,College of Arts and Sciences,Politics Philosophy and Economics,FALSE,-,
-1,Gloria Zhu,zhu_g.jpg,2021,The Wharton School,Finance,TRUE,VP Finance,
-1,Irene Zhang,zhan_i.jpg,2021,School of Engineering and Applied Science,Computer and Information Sciences,TRUE,VP Internal,
-1,Luke Bandeen,band_l.jpg,2021,College of Arts and Sciences,Economics,FALSE,-,
-1,Kenneth Shinn,shin_k.jpg,2021,College of Arts and Sciences,Economics,TRUE,VP External,
-1,Anant Kumar,kuma_a.jpg,2020,School of Engineering and Applied Science,Computer and Information Sciences,FALSE,-,
-1,Leechen Zhu,zhu_l.jpg,2021,College of Arts and Sciences,Architecture,FALSE,-,
+1,Kai Lu,lu_k.jpg,2020,College of Arts and Sciences,Politics Philosophy and Economics,FALSE,-,jj
+1,Gloria Zhu,zhu_g.jpg,2021,The Wharton School,Finance,TRUE,VP Finance,kk
+1,Irene Zhang,zhan_i.jpg,2021,School of Engineering and Applied Science,Computer and Information Sciences,TRUE,VP Internal,ll
+1,Luke Bandeen,band_l.jpg,2021,College of Arts and Sciences,Economics,FALSE,-,mm
+1,Kenneth Shinn,shin_k.jpg,2021,College of Arts and Sciences,Economics,TRUE,VP External,nn
+1,Anant Kumar,kuma_a.jpg,2020,School of Engineering and Applied Science,Computer and Information Sciences,FALSE,-,oo
+1,Leechen Zhu,zhu_l.jpg,2021,College of Arts and Sciences,Architecture,FALSE,-,pp
