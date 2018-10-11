@@ -36,25 +36,29 @@ permalink: /members
         {% endfor %}
       </div>
 
+      <!--Create modals for everyone with a description-->
       {% for member in site.data.members %}
-      <div class="modal fade"  id="{{member.name}}" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered" role="document">
-          <div class="modal-content" style="background-color:#111;">
-            <div class="modal-header" style="border-color:black!important;">
-              <h5 class="modal-title" style="color: white; font-weight:600;margin: 0 auto;" id="{{member.name}}-title">{{member.name}}</h5>
-            </div>
-            <div class="modal-body">
-              <div class="container-fluid">
-                <div class="row">
-                  <div class="col"></div>
-                    <div class="col-10">{{member.description}}</div>
-                  <div class="col"></div>
+        {% if {{member.description}} != "FALSE" %}
+          <div class="modal fade"  id="{{member.name}}" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content" style="background-color:#111;">
+                <div class="modal-header" style="border-color:black!important;">
+                  <h5 class="modal-title" style="color: white; font-weight:600;margin: 0 auto;" id="{{member.name}}-title">{{member.name}}</h5>
+                </div>
+                <div class="modal-body">
+                  <div class="container-fluid">
+                    <img src="{{site.baseurl}}/img/profiles/{{member.image}}" width="350px" height="350px" class="rounded mx-auto d-block">
+                    <div class="row">
+                      <div class="col"></div>
+                        <div style="color:#bbb;" class="col-10">{{member.description}}</div>
+                      <div class="col"></div>
+                    </div>
+                  </div>
+                </div>
                 </div>
               </div>
             </div>
-            </div>
-          </div>
-        </div>
+        {% endif %}
       {% endfor %}
 
       <!--PAST TROUPES-->
