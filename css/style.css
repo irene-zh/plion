@@ -12,7 +12,7 @@ body {
 footer {
     background-color: black !important;
     opacity: 0.5 !important;
-    padding: 10px 8px !important;
+    padding: 5em 4em !important;
     color: white !important;
     text-align: center !important;
 }
@@ -20,7 +20,7 @@ footer {
 p {
     color: #ddd !important;
     font-weight: 300 !important;
-    font-size: 1.5rem !important;
+    font-size: 1rem !important;
     text-align: center !important;
     padding: 20px 60px !important;
 }
@@ -108,6 +108,10 @@ a:hover {
 }
 
 .sub-heading {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width:50%;
     font-size: 1.5rem;
     text-transform: uppercase;
     color: #aaa;
@@ -204,4 +208,11 @@ a:hover {
   height: 200px;
   margin: 10px;
   text-align: center;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width:50%;
 }
